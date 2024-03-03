@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Lian Jung Portfolio</title>
+</head>
+<body>
+    <nav id="desktopNav">
+        <div class="logo">Lian Jung</div>
+        <div>
+            <ul class="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="mobileNav">
+        <div class="logo">Lian Jung</div>
+        <div class="hamburgerMenu">
+            <div class="hamburgerIcon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="menuLinks">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </nav>
+    <section id="about">
+        <div class="profileImg">
+            <img src="./images/profile.jpeg" alt="profile picture">
+        </div>
+        <div class="profileInfo">
+            <h1 class="title">About me</h1>
+            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Quia sit voluptatibus saepe dolore qui cumque, a temporibus 
+                aspernatur laboriosam, praesentium numquam sunt. Ullam laboriosam dolorum, 
+                debitis libero velit necessitatibus sed?
+            </p>
+            <div class="resume">
+                <button onclick="window.open('./images/resume.png')">Download Resume</button>
+            </div>
+            <div class="socials">
+                <img class="icon" src="./images/linkedin.png" alt="LinkedIn Profile" onclick="location.href='https://www.linkedin.com/in/lian-jung-86889a296/'">
+                <img class="icon" src="./images/github.png" alt="Github Profile" onclick="location.href='https://github.com/lcj01'">
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <div class="header">
+            <h1>Experience</h1>
+        </div>
+        <div class="skillsContainer">
+            <article class="skills">
+                    <div class="frontend">
+                        <h1>Frontend Development</h1>
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        <div>
+                            <h3>Javascript</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+                    <div class="languages">
+                        <h1>Programming Languages</h1>
+                        <div>
+                            <h3>Python</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        <div>
+                            <h3>C++</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        <div>
+                            <h3>Java</h3>
+                            <p>Basic</p>
+                        </div>
+                    </div>
+                    <div class="backend">
+                        <h1>Backend Development</h1>
+                        <div>
+                            <h3>Flask</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        <div>
+                            <h3>SQLAlchemy</h3>
+                            <p>Basic</p>
+                        </div>
+                        <div>
+                            <h3>PostgreSQL</h3>
+                            <p>Basic</p>
+                        </div>
+                        <div>
+                            <h3>SpringBoot</h3>
+                            <p>Basic</p>
+                        </div>
+                    </div>
+            </article>
+        </div>
+        <div class="timelineContainer">
+            <h1>Timeline</h1>
+            <!-- CREATE A TIMELINE FOR WORK EXPERIENCES LATER-->
+            <div class="timeline">
+
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="header">
+            <h1>Projects</h1>
+        </div>
+        <div class="projectsContainer">
+            <div class="project">
+                <h1>Pomodoro Timer</h1>
+                <div class="redirectBtns">
+                    <button class="viewSite">Demo</button>
+                    <button class="viewCode">Github</button>
+                </div>
+            </div>
+            <div class="project">
+                <h1>Stocks Predictor</h1>
+                <div class="redirectBtns">
+                    <button class="viewSite">Demo</button>
+                    <button class="viewCode">Github</button>
+                </div>
+            </div>
+            <div class="project">
+                <h1>Undetermined</h1>
+                <div class="redirectBtns">
+                    <button class="viewSite">Demo</button>
+                    <button class="viewCode">Github</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="header">
+            <h1>Let's Connect</h1>
+        </div>
+        <div class="contactInfo">
+            <div class="email">
+                <img src="./images/email.png" alt="" class="icon">
+                <p><a href="mailto:lianjung1@gmail.com">lianjung1@gmail.com</a></p>
+            </div>
+            <div class="telephone">
+                <img src="./images/telephone.png" alt="" class="icon">
+                <p>(484)-502-8595</p>
+            </div>
+            <div class="linkedIn">
+                <img src="./images/linkedin.png" alt="" class="icon">
+                <p><a href="https://www.linkedin.com/in/lian-jung-86889a296/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- add fixed nav bar -->
+<!-- add parallax image -->
